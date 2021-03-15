@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlantis Chalange</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+        -webkit-min-device-pixel-ratio: 0;
+      }
+
+      :root {
+        --primary-color: skyblue;
+      }
+
+      .box {
+        width: 5cm;
+        height: 5cm;
+        border: solid 2px var(--primary-color);
+        margin: 10px;
+        position: relative;
+      }
+
+      .container {
+        width: 99vw;
+        height: 99vh;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex: 25%;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-size: 40px;
+        color: var(--primary-color);
+      }
+
+      .container h1 {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+      }
+
+      .container h2 {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+      }
+
+      .container h3 {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+      }
+
+      .container h4 {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+      }
+
+      .container h5 {
+        text-align: center;
+        padding-top: 3.4cm;
+        color: var(--primary-color);
+        font-size: 50px;
+      }
+
+      .woods {
+        border: 2px solid darkorchid;
+      }
+
+      .woods h5 {
+        color: darkorchid;
+      }
+
+      .box-1 {
+        background: url("./img/lake/sail.board.jpg") no-repeat center
+          center/cover;
+      }
+
+      .box-2 {
+        background: url("./img/lake/island.jpeg") no-repeat center center/cover;
+      }
+
+      .box-3 {
+        background: url("./img/lake/ruins1.jpg") no-repeat center center/cover;
+      }
+
+      .box-4 {
+        background: url("./img/lake/tornado.jpg") no-repeat center center/cover;
+      }
+
+      .box-5 {
+        background: url("./img/lake/ruins2.jpg") no-repeat center center/cover;
+      }
+
+      .box-6 {
+        background: url("./img/lake/hydra.jpg") no-repeat center center/cover;
+      }
+
+      .box-7 {
+        background: url("./img/lake/ruins4.jpg") no-repeat center center/cover;
+      }
+
+      .box-8 {
+        background: url("./img/lake/kraken.jpg") no-repeat center center/cover;
+      }
+
+      .box-9 {
+        background: url("./img/lake/waterguardian.jpg") no-repeat center
+          center/cover;
+      }
+
+      /* *************************************************** */
+      .box-10 {
+        background: url("./img/lake/lake1.jpg") no-repeat center center/cover;
+      }
+
+      .box-11 {
+        background: url("./img/lake/lake2.jpg") no-repeat center center/cover;
+      }
+
+      .box-12 {
+        background: url("./img/lake/lake3.jpg") no-repeat center center/cover;
+      }
+
+      .box-13 {
+        background: url("./img/lake/lake4.jpg") no-repeat center center/cover;
+      }
+
+      .box-14 {
+        background: url("./img/lake/lake5.jpg") no-repeat center center/cover;
+      }
+
+      .box-15 {
+        background: url("./img/lake/lake6.jpg") no-repeat center center/cover;
+      }
+
+      .box-16 {
+        background: url("./img/lake/lake7.jpg") no-repeat center center/cover;
+      }
+
+      .box-17 {
+        background: url("./img/lake/lake8.jpg") no-repeat center center/cover;
+      }
+
+      .box-18 {
+        background: url("./img/lake/lake9.jpg") no-repeat center center/cover;
+      }
+
+      .box-19 {
+        background: url("./img/lake/lake10.jpg") no-repeat center center/cover;
+      }
+
+      .box-20 {
+        background: url("./img/lake/lake11.jpg") no-repeat center center/cover;
+      }
+
+      .box-21 {
+        background: url("./img/lake/lake12.jpg") no-repeat center center/cover;
+      }
+
+      /* *********************************************************** */
+
+      .box-22 {
+        background: url("./img/woods/dark1.jpeg") no-repeat center center/cover;
+      }
+
+      .box-23 {
+        background: url("./img/woods/dark2.jpg") no-repeat center center/cover;
+      }
+
+      .box-24 {
+        background: url("./img/woods/dark3.jpg") no-repeat center center/cover;
+      }
+
+      .box-25 {
+        background: url("./img/woods/dark4.jpg") no-repeat center center/cover;
+      }
+
+      .box-26 {
+        background: url("./img/woods/dark5.jpg") no-repeat center center/cover;
+      }
+
+      .box-27 {
+        background: url("./img/woods/dark6.jpg") no-repeat center center/cover;
+      }
+
+      .box-28 {
+        background: url("./img/woods/dark7.jpg") no-repeat center center/cover;
+      }
+
+      .box-29 {
+        background: url("./img/woods/dark8.jpg") no-repeat center center/cover;
+      }
+
+      .box-30 {
+        background: url("./img/woods/dark9.jpg") no-repeat center center/cover;
+      }
+
+      .box-31 {
+        background: url("./img/woods/dark10.jpg") no-repeat center center/cover;
+      }
+
+      .box-32 {
+        background: url("./img/woods/dark11.jpg") no-repeat center center/cover;
+      }
+
+      .box-33 {
+        background: url("./img/woods/dark12.jpg") no-repeat center center/cover;
+      }
+
+      .box-34 {
+        background: url("./img/woods/dark13.jpg") no-repeat center center/cover;
+      }
+
+      .box-35 {
+        background: url("./img/woods/dark14.jpg") no-repeat center center/cover;
+      }
+
+      .box-36 {
+        background: url("./img/woods/dark15.jpg") no-repeat center center/cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">
+        <h1>60</h1>
+        <h2>60</h2>
+        <h3>60</h3>
+        <h4>60</h4>
+      </div>
+      <div class="box box-2">
+        <h1>63</h1>
+        <h2>63</h2>
+        <h3>63</h3>
+        <h4>63</h4>
+      </div>
+      <div class="box box-3">
+        <h1>66</h1>
+        <h2>66</h2>
+        <h3>66</h3>
+        <h4>66</h4>
+      </div>
+      <div class="box box-4">
+        <h1>69</h1>
+        <h2>69</h2>
+        <h3>69</h3>
+        <h4>69</h4>
+      </div>
+      <div class="box box-5">
+        <h1>72</h1>
+        <h2>72</h2>
+        <h3>72</h3>
+        <h4>72</h4>
+      </div>
+      <div class="box box-6">
+        <h1>75</h1>
+        <h2>75</h2>
+        <h3>75</h3>
+        <h4>75</h4>
+      </div>
+      <div class="box box-7">
+        <h1>78</h1>
+        <h2>78</h2>
+        <h3>78</h3>
+        <h4>78</h4>
+      </div>
+      <div class="box box-8">
+        <h1>81</h1>
+        <h2>81</h2>
+        <h3>81</h3>
+        <h4>81</h4>
+      </div>
+      <div class="box box-9">
+        <h1>84</h1>
+        <h2>84</h2>
+        <h3>84</h3>
+        <h4>84</h4>
+      </div>
+      <!-- ******************************************************* -->
+      <div class="box box-10">
+        <h5>57</h5>
+      </div>
+      <div class="box box-11">
+        <h5>58</h5>
+      </div>
+      <div class="box box-12">
+        <h5>59</h5>
+      </div>
+      <div class="box box-13">
+        <h5>61</h5>
+      </div>
+      <div class="box box-14">
+        <h5>62</h5>
+      </div>
+      <div class="box box-15">
+        <h5>64</h5>
+      </div>
+      <div class="box box-16">
+        <h5>65</h5>
+      </div>
+      <div class="box box-17">
+        <h5>67</h5>
+      </div>
+      <div class="box box-18">
+        <h5>68</h5>
+      </div>
+      <div class="box box-19">
+        <h5>70</h5>
+      </div>
+      <div class="box box-20">
+        <h5>71</h5>
+      </div>
+      <div class="box box-21">
+        <h5>73</h5>
+      </div>
+      <!-- ***************************************************** -->
+      <div class="box box-22 woods">
+        <h5>29</h5>
+      </div>
+      <div class="box box-23 woods">
+        <h5>30</h5>
+      </div>
+      <div class="box box-24 woods">
+        <h5>32</h5>
+      </div>
+      <div class="box box-25 woods">
+        <h5>33</h5>
+      </div>
+      <div class="box box-26 woods">
+        <h5>35</h5>
+      </div>
+      <div class="box box-27 woods">
+        <h5>36</h5>
+      </div>
+      <div class="box box-28 woods">
+        <h5>38</h5>
+      </div>
+      <div class="box box-29 woods">
+        <h5>39</h5>
+      </div>
+      <div class="box box-30 woods">
+        <h5>41</h5>
+      </div>
+      <div class="box box-31 woods">
+        <h5>42</h5>
+      </div>
+      <div class="box box-32 woods">
+        <h5>44</h5>
+      </div>
+      <div class="box box-33 woods">
+        <h5>45</h5>
+      </div>
+      <div class="box box-34 woods">
+        <h5>47</h5>
+      </div>
+      <div class="box box-35 woods">
+        <h5>48</h5>
+      </div>
+      <div class="box box-36 woods">
+        <h5>50</h5>
+      </div>
+    </div>
+  </body>
+</html>
